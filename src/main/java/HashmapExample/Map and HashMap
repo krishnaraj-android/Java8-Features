@@ -1,0 +1,20 @@
+// Map is the interface (general concept)
+Map<String, Integer> myMap;
+
+// HashMap is a specific implementation <--given by class hashmap
+myMap = new HashMap<>();
+
+// You can now use myMap to store and access data
+myMap.put("apple", 1);
+int count = myMap.get("apple");
+
+In this code:
+
+    We declare a variable myMap of type Map<String, Integer>. This means myMap can hold any object that implements the Map interface.
+
+    We then create a HashMap object and assign it to myMap. Now myMap is a specific HashMap that follows the Map interface rules.
+
+In summary:
+
+    Map is the blueprint (interface).
+    HashMap is a specific object built according to that blueprint (implementation).

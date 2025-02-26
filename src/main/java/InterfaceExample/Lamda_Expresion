@@ -1,0 +1,22 @@
+// Before Java 8 (Anonymous Inner Class)
+interface MyInterface {
+    void myMethod(int x);
+}
+
+MyInterface obj1 = new MyInterface() {
+    @Override
+    public void myMethod(int x) {
+        System.out.println("Value of x: " + x);
+    }
+};
+
+obj1.myMethod(5); // Output: Value of x: 5
+
+
+// Java 8 (Lambda Expression)
+MyInterface obj2 = (int x) -> System.out.println("Value of x: " + x);
+obj2.myMethod(10); // Output: Value of x: 10
+
+// Even shorter (Type inference)
+MyInterface obj3 = x -> System.out.println("Value of x: " + x);
+obj3.myMethod(15); // Output: Value of x: 15
